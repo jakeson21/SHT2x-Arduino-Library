@@ -45,6 +45,7 @@ class SHT2x
   //Public Functions
     SHT2x();
     void     begin();
+	void     begin(int SDA, int SCL);
     float    GetHumidity(void);
     float    GetTemperature(void);
     void     setResolution(uint8_t resBits);
