@@ -29,6 +29,11 @@ void SHT2x::begin(void)
 {
   Wire.begin();
 }
+
+void SHT2x::begin(int SDA, int SCL)
+{
+  Wire.begin(SDA, SCL);
+}
  
 /**********************************************************
  * GetHumidity
